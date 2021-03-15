@@ -1,0 +1,67 @@
+/* General */
+
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+}
+
+/* Header */
+
+nav {
+    background-color: lightgrey;
+    padding: 1rem 0 1rem 0;
+    text-align: right;
+    color: black;
+    
+}
+
+nav a {
+    text-decoration: none;
+   
+}
+
+nav a:visited {
+    color: black;
+}
+nav li {
+    display: inline;
+    width: 80%;
+    margin-right: 7rem;
+    font-weight: 600;
+    
+}
+
+
+/* Body section */
+
+.project-title h3 {
+    display: inline;
+  }
+  
+#skills-container {
+    color: slategrey;
+    display: flex;
+    font-size: 2.5rem;
+    width: 50%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+/* foote rsection */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+
+}
+
+/* media queries */
