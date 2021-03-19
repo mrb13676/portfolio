@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Mike Blackburn</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="./styles.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li class="navitem"><a href="#">About Me</a></li>
+    <header id="home">
+        <nav id="topnav" class="sticky">
+        <h1>Mike Blackburn</h1>
+        <ul class="nav-link">
+            <li class="navitem"><a href="#">About</a></li>
             <li class="navitem"><a href="#">Projects</a></li>
             <li class="navitem"><a href="#">Skills</a></li>
-            <li class="navitem"><a href="#">Contact</a></li>
+            <li class="navitem"><a href="/contact.html">Contact</a></li>
         </ul>        
     </nav>
     <main>
@@ -24,42 +31,75 @@
                     <p>By day, I'm a mild mannered medical professional. By night I'm teaching myself full stack web development</p>
                     <p>My interests include aviation and reading</p>
                 </div>
-
+                <img class="about-image" src="./media/IMG_0125.jpg" alt="michael blackburn">
             </div>
         </section>
+
+        
+
+<button onclick="scrollToTop()">Scroll to the top of the element</button>
+<button onclick="scrollToBottom()">Scroll to the bottom of the element</button>
         <section id="projects">
             <h2>Projects</h2>
-            <details class="project">
-            <summary class="project-title">
-                <h3>Club Website</h3>
-                <img>
-                <p class="project-description">
-                    A club website for the Johannesburg Light Plane Club using CSS and responsive grids.
-                </p>
-            </summary>
+            <div class="projects-container">
+                <div class="project-item">
+                    <a href="" target="_blank">
+                        <img class="project-image" src="./media/ss1.png">
+                        <div class="overlay">
+                            <h3>Plane Club Website</h3>
+                            <p>A mock website for the Jhb Light Plane Club</p>
+                            <p>using HTML, CSS</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- 
+                    <div class="project-item">
+                        <img class="project-image" src="./media/ss1.png">
+                    </div>
+                    <div class="project-item">
+                    <img class="project-image" src="./media/ss1.png">
+                </div>
+                <div class="project-item">
+                    <img class="project-image" src="./media/ss1.png">
+                </div> -->
+            </div> 
+            
+               
+                
 
-            </details>
 
 
 
         </section>
         <section id="skills">
             <h2>Skills</h2>
-            <div id="skills-container">
-              <i class="fab fa-html5"></i>
-              <i class="fab fa-css3-alt"></i>
-              <i class="fab fa-js"></i>
-              <i class="fab fa-github"></i>
+            <div class="all-skills clearfix">
+                <div class="languages">
+                    <h3>Languages and Technologies</h3>
+                    <div class="skill-images">
+                        <div class="skill-image image1" title="Html5"></div>
+                        <div class="skill-image image2" title="CSS3"></div>
+                        <div class="skill-image image3" title="JavaScript"></div>
+                        <div class="skill-image image4" title="Github"></div>
+                    </div>
+                </div>
+                <div class="other-skills">
+                    <h3>Other Skills</h3>
+                    <ul>
+                        <li>Place holder 1</li>
+                        <li>Place holder 2</li>
+                    </ul>
+
+                </div>
+                ::after
             </div>
           </section>
     
-        <section id="contact">
-            <h2>Contact</h2>
-        </section>
+       
     </main>
     <footer>
-        <p>Copyright 2021 M Blackburn</p>
-        <p>Made in Jozi, ZA</p>
+        <p>2021 M Blackburn</p>
+        <p>Designed and developed in Jozi, ZA</p>
 
     </footer>
 
